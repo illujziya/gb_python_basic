@@ -35,10 +35,12 @@ class Costume(Clothes):
     def tall(self):
         return self.param
 
-big_coat = Coat(58)
-nice_costume = Costume(180)
+big_coat = Coat(82)
+nice_costume = Costume(55)
 
 print(f"Расход ткани для пальто ({big_coat.size} размер) - {big_coat.consumption:.2f}, для костюма (рост {nice_costume.tall})- {nice_costume.consumption:.2f}")
+print(f"Всего ткани нужно - {big_coat.consumption + nice_costume.consumption:.2f}")
 
 # Результат запуска:
-# Расход ткани для пальто (58 размер) - 9.42, для костюма (рост 180)- 360.30
+# Расход ткани для пальто (82 размер) - 13.12, для костюма (рост 55)- 110.30
+# Всего ткани нужно - 123.42
